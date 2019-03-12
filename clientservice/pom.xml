@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>myjcfdemo315</artifactId>
+        <groupId>com.sitech</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>clientservice</artifactId>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>com.sitech.ijcf</groupId>
+            <artifactId>ijcf-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.sitech.ijcf</groupId>
+            <artifactId>ijcf-boot-starter-rest</artifactId>
+        </dependency>
+        <!--支持电信报文格式-->
+       <!-- <dependency>
+            <groupId>com.sitech.ijcf</groupId>
+            <artifactId>ijcf-boot-starter-telecom-message</artifactId>
+        </dependency>-->
+
+
+        <dependency>
+            <groupId>com.sitech.ijcf</groupId>
+            <artifactId>ijcf-boot-starter-message6</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-logging</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.sitech.ijcf</groupId>
+            <artifactId>ijcf-boot-starter-springcloud</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-test</artifactId>
+            <version>2.1.0.RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+<!-- guomq解开了-->
+     <!--   <dependency>
+        <groupId>com.sitech.ijcf</groupId>
+        <artifactId>ijcf-boot-starter-hsf</artifactId>
+    </dependency>
+-->
+
+
+    </dependencies>
+
+</project>

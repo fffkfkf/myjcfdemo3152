@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>myjcfdemo315</artifactId>
+        <groupId>com.sitech</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>serviceflow</artifactId>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring.boot.version>1.5.6.RELEASE</spring.boot.version>
+        <!--<tomcat.version>8.0.29</tomcat.version>-->
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.sitech.ijcf</groupId>
+            <artifactId>ijcf-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.sitech.ijcf</groupId>
+            <artifactId>ijcf-boot-starter-rest</artifactId>
+        </dependency>
+
+        <!-- 电信格式的出入参数操作-->
+     <!--   <dependency>
+            <groupId>com.sitech.ijcf</groupId>
+            <artifactId>ijcf-boot-starter-telecom-message</artifactId>
+        </dependency>
+-->
+        <dependency>
+            <groupId>com.sitech.ijcf</groupId>
+            <artifactId>ijcf-boot-starter-message6</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sitech.ijcf</groupId>
+            <artifactId>ijcf-boot-starter-mybatis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.0.28</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-logging</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sitech.ijcf</groupId>
+            <artifactId>ijcf-boot-starter-springcloud</artifactId>
+        </dependency>
+
+<!-- guomq 注释了 -->
+        <!--<dependency>
+            <groupId>com.sitech.ijcf</groupId>
+            <artifactId>ijcf-boot-starter-hsf</artifactId>
+        </dependency>-->
+
+    </dependencies>
+
+
+</project>

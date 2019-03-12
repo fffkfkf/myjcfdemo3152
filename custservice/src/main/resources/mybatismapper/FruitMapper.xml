@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sitech.demo.mapper.FruitMapper"   >
+<!--
+
+  <select id="selectByPrimaryKey" parameterType="int" resultType="com.sitech.ijcf.cust.domain.CustDomain">
+      select id,name,oprtime from ct_cust_info where id =  #{_parameter}
+    </select>
+-->
+
+  <select id="findById" parameterType="int" resultType="com.sitech.demo.domain.Fruit">
+      select id,apple,banana,pear  from fruit where id =  #{id}
+    </select>
+
+    <!-- parameterType="map" 这个加不加都行  -->
+<insert id="insertFruit"  useGeneratedKeys="true" keyProperty="id">
+    insert into fruit (id,apple,banana,pear) values (#{id},#{apple},#{banana},#{pear})
+</insert>
+
+    <!-- parameterType="map" -->
+<update id="updateFruit"  >
+    update fruit set
+    id =#{id},
+    apple=#{apple},
+    pear=#{pear},
+    banana=#{banana}
+    where id =#{id}
+</update>
+
+<delete id="deleteFruit">
+    delete from fruit where id =#{id}
+</delete>
+
+</mapper>
